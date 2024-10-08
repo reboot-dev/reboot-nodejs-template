@@ -41,7 +41,7 @@ dev run --tsc='npx tsc'
 dev run --nodejs
 
 # Save state between chaos restarts.
-dev run --name=
+dev run --name=app
 
 # Run the application!
 dev run dist/backend/src/main.js
