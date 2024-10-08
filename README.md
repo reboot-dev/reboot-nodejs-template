@@ -1,1 +1,1 @@
-# reboot-typescript-template
+# reboot-nodejs-template
