@@ -26,16 +26,7 @@ protoc api/
 
 # Tell `rbt protoc` where to put generated files.
 protoc --nodejs=api
-protoc --react=web/src/api
-
-# Don't use extensions for React generated files because webpack can't
-# handle them (https://github.com/TypeStrong/ts-loader/issues/465).
-protoc --react-extensionless
-
-# Watch if any generated or source files are modified.
-dev run --watch=backend/**/*.ts
-
-dev run --tsc='npx tsc'
+protoc --react=api
 
 # Tell `rbt` that this is a Node.js application.
 dev run --nodejs
@@ -44,4 +35,4 @@ dev run --nodejs
 dev run --name=app
 
 # Run the application!
-dev run dist/backend/src/main.js
+dev run --application=backend/src/main.ts
