@@ -1,6 +1,6 @@
-import { Application } from "@reboot-dev/reboot";
+import { Application, ExternalContext } from "@reboot-dev/reboot";
 
-const initialize = async (context) => {};
+const initialize = async (context: ExternalContext) => {};
 
 new Application({
   servicers: [],
